@@ -1,0 +1,16 @@
+#include <iostream>
+double cubicRoot (double val) {
+    double y,y1;
+    y = val;
+    do {
+        y1 = y;
+        y=0.5*(y+3*val/(2*y*y + val/y));
+    } while (std::abs(x:y - y1) > 1/100000);
+    return y;
+}
+int main() {
+    double x;
+    std::cin>>x;
+    std::cout << cubicRoot(x) << '\n';
+    return 0;
+}
